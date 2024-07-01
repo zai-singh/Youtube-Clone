@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="sidebar.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+        </div>
+        <img class="current-user-picture" src="images/my-channel-icon.jpg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=pLfL00vHKI4&list=LL&index=52" target="_blank"><img class="thumbnail" src="images/bunsenburner.webp"></a>
+            <div class="video-time">4:00</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/poi.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                ♫ Person of Interest - Bunsen Burner [FINAL song of (05x13)]
+              </p>
+              <p class="video-author">
+                POI-Best of
+              </p>
+              <p class="video-stats">
+                303k views &#183; 8 years ago
+               </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=uqwC41RDPyg&list=LL&index=41" target="_blank" ><img class="thumbnail" src="images/calc.webp"></a>
+            <div class="video-time">6:03</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/calculus.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Calculus Rhapsody
+              </p>
+              <p class="video-author">
+                WordGospel09
+              </p>
+              <p class="video-stats">
+                5.5M views &#183; 15 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=vyqbNFMDRGQ" target="_blank"><img class="thumbnail" src="images/js fighting game.webp"></a>
+            <div class="video-time">3:56:19</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/jsgame.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                JavaScript Fighting Game Tutorial with HTML Canvas
+              </p>
+              <p class="video-author">
+                Chris Courses
+              </p>
+              <p class="video-stats">
+                6.1M views &#183; 2 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=WhfEGKc7PLQ&list=LL&index=38" target="_blank"> <img class="thumbnail" src="images/skodacake.webp"></a>
+            <div class="video-time">1:00</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/skoda.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Skoda Fabia Advert - Original Cake Car
+              </p>
+              <p class="video-author">
+                Miscclips
+              </p>
+              <p class="video-stats">
+                1M views &#183; 17 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=WZy02_OFErk&list=LL&index=33" target="_blank"><img class="thumbnail" src="images/succesfuljoke.webp"></a>
+            <div class="video-time">0:28</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/succesfuljoke.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Most successful joke ever
+              </p>
+              <p class="video-author">
+                Robert
+              </p>
+              <p class="video-stats">
+                17M views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=g_En83zHGTQ&list=LL&index=27&t=223s" target="_blank"><img class="thumbnail" src="images/classicmusic.webp"></a>
+            <div class="video-time">38:27</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/classicteddy.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Classical music for gentlemen (playlist)
+              </p>
+              <p class="video-author">
+               ClassicalTeddy
+              </p>
+              <p class="video-stats">
+                2.4M views &#183; 11 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=mj5tBzSZ9m8&list=LL&index=31&t=128s" target="_blank"><img class="thumbnail" src="images/tomandjerry.webp"></a>
+            <div class="video-time">6:58</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/tomandjerry.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Tom and Jerry - Mice Follies
+              </p>
+              <p class="video-author">
+                MovieCon Animation
+              </p>
+              <p class="video-stats">
+                15M views &#183; 7 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=Pyy_FIYE7EE&list=LL&index=34" target="_blank"><img class="thumbnail" src="images/mistymountains.webp"></a>
+            <div class="video-time">1:34</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/misty.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Misty Mountains (Cold) Full Song And Scene With Lyrics [HD/HQ]
+              </p>
+              <p class="video-author">
+                Sammb
+              </p>
+              <p class="video-stats">
+                10M views &#183; 11 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=SwUpMhp-DEc&t=16s" target="_blank"><img class="thumbnail" src="images/future.webp"></a>
+            <div class="video-time">3:20:00</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/cyberpunk.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Future セルフ - Ambient Cyberpunk for Forgotten Dreams
+              </p>
+              <p class="video-author">
+                Athena IV
+              </p>
+              <p class="video-stats">
+                443k views &#183; 2 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+           <a href="https://www.youtube.com/watch?v=mv5SZ7i6QLI&list=LL&index=24&t=279s" target="_blank"><img class="thumbnail" src="images/classicalmix.webp"></a>
+            <div class="video-time">44:30</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/classicking.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                a classical mix for a king before battle
+              </p>
+              <p class="video-author">
+                Resonance Reverie
+              </p>
+              <p class="video-stats">
+                3.1M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=BftgNGgjaOA&list=LL&index=26&t=2957s" target="_blank"><img class="thumbnail" src="images/jazz.webp"></a>
+            <div class="video-time">1:50:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/jazz.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                
+              </p>Smooth Jazz And Coffee
+              <p class="video-author">
+                Chill Vibes Corner
+              </p>
+              <p class="video-stats">
+                134 views &#183; 1 month ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=q99Gmpvkuhc&list=LL&index=35" target="_blank"><img class="thumbnail" src="images/metroboominpotc.webp"></a>
+            <div class="video-time">0:10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/metroboomin.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                METRO BOOMIN MAKE IT BOOM!!!
+              </p>
+              <p class="video-author">
+                Night Owl
+              </p>
+              <p class="video-stats">
+                608k views &#183; 5 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
